@@ -4,7 +4,7 @@ import numpy as np
 lower = np.array([80, 20, 20])
 upper = np.array([100, 255, 255])
 
-img = cv.imread('tugas1.png')
+img = cv.imread('MagangBayu2024-OpenCV/tugas/tugas1/tugas1.png')
 
 image= cv.cvtColor(img, cv.COLOR_BGR2HSV)
 mask = cv.inRange(image, lower, upper)
@@ -22,3 +22,4 @@ cv.imshow("picture", img)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
+

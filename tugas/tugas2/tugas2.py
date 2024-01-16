@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('tugas2.jpg')
+img = cv2.imread('MagangBayu2024-OpenCV/tugas/tugas2/tugas2.jpg')
 cropped_img = img[200:500, 650:900]
 gray = cv2.cvtColor(cropped_img, cv2.COLOR_BGR2GRAY)
 img_blur = cv2.GaussianBlur(img, (5, 5), 300)
